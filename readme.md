@@ -7,7 +7,7 @@ Plugin for generating sequential field values. It adds a `pre('save')` hook to t
 ## Basic usage example
 
 ```javascript
-const Generator = require('../index.js');
+const Generator = require('@alonsojr1980/mongoose-generator');
 const mongoose = require('mongoose');                
 
 const UserSchema = new mongoose.Schema({
