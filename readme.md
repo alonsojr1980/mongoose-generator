@@ -7,7 +7,7 @@ Plugin for generating sequential field values. It adds a `pre('save')` hook to t
 ## Basic usage example
 
 ```javascript
-const Generator = require('../index.js');
+const Generator = require('@alonsojr1980/mongoose-generator');
 const mongoose = require('mongoose');                
 
 const UserSchema = new mongoose.Schema({
@@ -62,7 +62,7 @@ bus1.save(() => {
     console.log(bus1.sequentialNumber); //outputs 101
 });
 ```
->> The following document will be added to a collection named **generators**:
+>> The following document will be added to a collection named **generators**: <br>
 **{"name": "buses", "sequence": 101}**
 
 ## Static methods added to the model <a id="static-methods"></a>
