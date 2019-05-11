@@ -1,6 +1,6 @@
 {
   "name": "@alonsojr1980/mongoose-generator",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Easy to use sequencial ID generator for Mongoose",
   "main": "index.js",
   "scripts": {
@@ -15,7 +15,7 @@
     "mongoose",
     "gen_id",
     "sequential",
-    "id", 
+    "id",
     "mongo"
   ],
   "author": {
