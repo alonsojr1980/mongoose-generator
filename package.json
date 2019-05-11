@@ -1,0 +1,35 @@
+{
+  "name": "@alonsojr1980/mongoose-generator",
+  "version": "1.0.0",
+  "description": "Easy to use sequencial ID generator for Mongoose",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha ./test/tests.js",
+    "debug-test": "node ./test/manual.js "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alonsojr1980/mongoose-generator.git"
+  },
+  "keywords": [
+    "mongoose",
+    "gen_id",
+    "sequential",
+    "id", 
+    "mongo"
+  ],
+  "author": {
+    "name": "Alonso Júnior",
+    "email": "alonsorsjunior@gmail",
+    "url": "www.alonsojr.com.br"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alonsojr1980/mongoose-generator/issues"
+  },
+  "homepage": "https://github.com/alonsojr1980/mongoose-generator#readme",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "mongoose": "^5.5.7"
+  }
+}
