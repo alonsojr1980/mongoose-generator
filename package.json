@@ -28,8 +28,7 @@
     "url": "https://github.com/alonsojr1980/mongoose-generator/issues"
   },
   "homepage": "https://github.com/alonsojr1980/mongoose-generator#readme",
-  "dependencies": {
-    "chai": "^4.2.0",
+  "devDependencies": {
     "mongoose": "^5.5.7"
   }
 }
