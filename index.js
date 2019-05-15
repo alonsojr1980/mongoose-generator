@@ -33,14 +33,19 @@ function MongooseGeneratorPlugin (schema, options) {
     Generator.collection.name = pluginOptions.collection;
 
     schema.pre('save', function(next) {
-        Generator.gen_id(pluginOptions.name, pluginOptions.startAt, pluginOptions.increment, (err, seq) => {
-            if (!err && seq) {
-                this[pluginOptions.field] = seq;
-                next();
-            } else {
-                throw new Error(err);
-            }
-        });
+
+        if (!this[pluginOptions.field]) {
+            Generator.gen_id(pluginOptions.name, pluginOptions.startAt, pluginOptions.increment, (err, seq) => {
+                if (!err && seq) {
+                    this[pluginOptions.field] = seq;
+                    next();
+                } else {
+                    throw new Error(err);
+                }
+            });
+        } else {
+            next();
+        }
     });
 
     // returns the current sequence value
